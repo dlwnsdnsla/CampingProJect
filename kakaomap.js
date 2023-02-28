@@ -18,6 +18,7 @@ $(".box").on("click",".adrs", function() {
    let adress = d.attr("id");
    let searc = d.attr("data-value");
    let gourl = d.attr("data-url")
+   let num = d.attr("data-num")
    
    // 주소-좌표 변환 객체를 생성합니다
 var geocoder = new kakao.maps.services.Geocoder();
@@ -29,12 +30,14 @@ if (status === kakao.maps.services.Status.OK) {
        map: map,
        position: coords
  });
+ 
  var infowindow = new kakao.maps.InfoWindow({
-       content: `<div class="mapbox"><a href="${gourl}">${searc}</a></div>`
+       content: `<div class="mapbox"><a href="${gourl}"><h3>${searc}<h3><p class="adr">주소 : ${adress}<p><p class="pnum">전화번호 : ${num}<p></a></div>`
  });
  infowindow.open(map, marker);
  map.setCenter(coords);
 } 
 });    
    });
+   
  

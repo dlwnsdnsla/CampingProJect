@@ -74,3 +74,20 @@ select {
     padding:10px 10px;
     border-radius: 10px;
 }
+.mapbox p {
+    font-size: 13px;
+    color: gray;
+}
+.mapbox h3 {
+    font-size: 21px;
+    font-weight: bold;
+    color: cornflowerblue;
+    padding-top: 5px;
+}
+.mapbox .adr {
+    padding-top: 25px;
+}
+.mapbox .pnum {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
