@@ -17,6 +17,7 @@ $(".box").on("click",".adrs", function() {
    let d = $(this);
    let adress = d.attr("id");
    let searc = d.attr("data-value");
+   let gourl = d.attr("data-url")
    
    // 주소-좌표 변환 객체를 생성합니다
 var geocoder = new kakao.maps.services.Geocoder();
@@ -29,7 +30,7 @@ if (status === kakao.maps.services.Status.OK) {
        position: coords
  });
  var infowindow = new kakao.maps.InfoWindow({
-       content: `<div class="mapbox" style="width:150px;text-align:center;padding:10px 10px;">${searc}</div>`
+       content: `<div class="mapbox"><a href="${gourl}">${searc}</a></div>`
  });
  infowindow.open(map, marker);
  map.setCenter(coords);

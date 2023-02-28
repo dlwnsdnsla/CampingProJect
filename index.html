@@ -394,7 +394,7 @@
             console.log(msg);
             for (var i = 0; i < 10; i++){
             $( '.box .result' ).append( `<h2 id="${msg.documents[i].address_name}">${msg.documents[i].place_name}</h2>` );
-            $( '.box .result' ).append( `<span id="${msg.documents[i].address_name}" class="adrs" data-value="${msg.documents[i].place_name}">주소 : ${msg.documents[i].address_name}</span>` );
+            $( '.box .result' ).append( `<p id="${msg.documents[i].address_name}" class="adrs" data-url="${msg.documents[i].place_url}" data-value="${msg.documents[i].place_name}">주소 : ${msg.documents[i].address_name}</p>` );
             }
         });
     });
