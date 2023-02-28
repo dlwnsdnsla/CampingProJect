@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=f18cc458418db8d50fec70b76a731b5a&libraries=services"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=6938adc00cb38070fc3f50381896235c&libraries=services"></script>
     <style>
         #wrap {
             display: flex;
@@ -426,7 +426,7 @@
             console.log(msg);
             for (var i = 0; i < 20; i++){
             $( '.box' ).append( `<h2><a href="${msg.documents[i].place_url} id="${msg.documents[i].address_name}">${msg.documents[i].place_name}<a></h2>` );
-            $( '.box' ).append( `<span id="${msg.documents[i].address_name}" class="adrs">주소 : ${msg.documents[i].address_name}</span>` );
+            $( '.box' ).append( `<span id="${msg.documents[i].address_name}" class="adrs" data-value="${msg.documents[i].place_name}">주소 : ${msg.documents[i].address_name}</span>` );
             }
         });
     });
