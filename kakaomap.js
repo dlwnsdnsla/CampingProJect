@@ -7,6 +7,7 @@ var options = {
 };
 var map = new kakao.maps.Map(container, options); 
 
+
 // 원하는 위치에 마커 설정하기
 var markerPosition  = new kakao.maps.LatLng(37.501284, 127.029039); 
 var marker = new kakao.maps.Marker({

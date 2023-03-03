@@ -1,15 +1,10 @@
 jQuery(function($) {
-
-    if(matchMedia("screen and (max-width: 767px)").matches){
-        console.log("mobile");
-      }else if(matchMedia("screen and (max-width: 1023px)").matches){
-        console.log("tablet");
-      }else if(matchMedia("screen and (min-width: 1024px)").matches){
-        console.log("desktop");
-      }
-      
-      window.onresize = function(){
-        document.location.reload();
-      };
-
+//     let bWidth = window.innerWidth;
+// window.addEventListener("resize", () => {
+// const nWidth = window.innerWidth;
+// if ((bWidth < 1024 && nWidth >= 1024) || (bWidth > 1023 && nWidth <= 1023)) {
+// location.reload();
+// }
+// beforeWidth = nowWidth;
+// });
 });
