@@ -12,6 +12,7 @@ var markerPosition  = new kakao.maps.LatLng(37.501284, 127.029039);
 var marker = new kakao.maps.Marker({
    position: markerPosition
 });
+
 marker.setMap(map);
 $(".box").on("click",".adrs", function() {
    let d = $(this);

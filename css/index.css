@@ -1,16 +1,34 @@
 @charset "utf-8";
 body {
-    background: url(../img/background5.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background:url(../img/background3.jpg);
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.result::-webkit-scrollbar {
+    width: 15px;
+}
+
+.result::-webkit-scrollbar-thumb {
+    height: 30%;
+    background: #3d4983;
+    border-radius: 10px;
+}
+
+.result::-webkit-scrollbar-track {
+    background: rgba(33, 122, 244, .1);
 }
 #wrap {
     display: flex;
+    width: 85%;
+    margin: 0 auto;
+
 }
 .box {
     flex: 1;
-    height: 800px;
     opacity: 0.85;
     transition: all 0.4s;
 }
@@ -19,12 +37,11 @@ body {
 }
 #map {
     flex: 1;
-    height: 800px;
-    margin-right: 50px;
-    margin-top: 30px;
+    height: 66.4vh;
     border-radius: 5px;
     opacity: 0.85;
     transition: all 0.4s;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 #map:hover {
     opacity: 1;
@@ -47,7 +64,8 @@ select:hover {
 }
 .form {
     display: flex;
-    padding: 30px 50px;
+    padding: 0 50px;
+    padding-bottom: 30px;
 }
 .form #searchBtn {
     width: 150px;
@@ -64,15 +82,13 @@ select:hover {
     width: 90%;
     margin: 0 auto;
     background: rgba(255, 255, 255, 1);
-    padding-top: 20px;
+    padding: 20px 0px;
     border-radius: 10px;
-    height:740px;
+    height: 60vh;
     overflow: scroll;
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
-}
-.result::-webkit-scrollbar {
-    display: none; /* Chrome, Safari, Opera*/
+    overflow-x: hidden;
+    transition: all 0.4s;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 .result h2 {
     font-size: 20px;
@@ -109,6 +125,9 @@ select:hover {
     text-align:center;
     padding:10px 10px;
     border-radius: 10px;
+}
+.mapbox:hover {
+    text-decoration: underline;
 }
 .mapbox p {
     font-size: 13px;

@@ -4,204 +4,127 @@
 
 
 @media screen and (max-width:1024px) {
-    .cont1 .slider .slick-prev { 
-        font-size: 40px;
-    }
-    .cont1 .slider .slick-next { 
-        font-size: 40px;
-    }
-    article {
-        padding-bottom: 30px;
-        overflow: hidden;
-    }
-    #section>.cont {
-        opacity: 1;
-        margin-top: 0px;
-        padding-top: 0px;
-    }
-    .topbx h2 {
-        font-size: 30px;
-    }
-    .topbx p {
-        font-size: 16px;
-        padding: 10px 0 30px 0;
-        margin-bottom: 0px;
-    }
-
-    .cont1 .slider .slider_text h2 {
-        font-size: 36px;
-        line-height: 40px;
-        padding: 0px 0px 20px;
-    }
-    .cont1 .slider .slider_text p {
-        font-size: 15px;
-        padding-top: 10px;
-    }
-    .cont .cont_box h2{
-        font-size: 30px;
-        color: #333;
-        padding: 50px 0 0 0;
-    
-    }
-    .cont_box p {
-        font-size: 16px;
-        font-weight: normal;
-        color: #888;
-        padding: 15px 0 40px 0;
-    }
-
-
-    .cont_box {
-        width: 24%;
-        float: left;
-        margin-right: 1.333333333%;
-        transition: all 0.3s;
-        margin-bottom: 2%;
-    }
-
-    .cont .imgbox_wrap {
+    #wrap {
+        display: block;
         width: 98%;
     }
-
-
-    .imgbox_wrap {
-        width: 98%;
+    .box {
+        height: 185px;
+    }
+    #map {
+        height: 300px;
+        margin-top: 30px;
         margin: 0 auto;
+        width: 100%;
     }
-    .cont_box h3 {
-        font-size: 18px;
+    .form {
+        display: flex;
+        padding: 0px;
+        padding-bottom: 10px;
+    }
+    .result {
+        height:130px;
+        width: 100%;
+    }
+    .result h2 {
+        font-size: 15px;
         font-weight: bold;
-        color: #333;
-        margin: 1px 0 0 0;
+        text-align: center;
+        padding-top: 10px;
         transition: all 0.3s;
     }
-    .cont_box p {
-        font-size: 13px;
-        font-weight: normal;
-        color: #777;
-        margin: 10px 0 20px 0;
-    }
-    .cont_box .textbox {
-        padding: 20px 0 0 5px;
-    }
-
-    .cont4_left {
-        width: 100%;
-        float: left;
-        margin-bottom: 2%;
-        transition: all 0.3s;
-        
-    }
-    .cont4_right {
-        width: 100%;
-        float: right;
+    .result p {
+        font-size: 12px;
+        color: gray;
+        text-align: center;
+        cursor: pointer;
+        padding-top: 5px;
         transition: all 0.3s;
     }
-
-
-    .cont6 a {
-        width: 49%;
-        margin-right: 0.5%;
+    .result p:last-child {
+        padding-bottom: 15px;
     }
-    .cont6 a:first-child {
-        margin-right: 0px;
+    .mapbox {
+        width:200px;
+        text-align:center;
+        padding:5px 5px;
+        border-radius: 10px;
     }
-    .cont6 a:nth-child(3) {
-        margin-top: 5px;
-        margin-right: 0px;
+    .mapbox p {
+        font-size: 12px;
+        color: gray;
+    }
+    .mapbox h3 {
+        font-size: 15px;
+        font-weight: bold;
+        color: cornflowerblue;
+        padding-top: 5px;
+    }
+    .mapbox .adr {
+        padding-top: 15px;
+    }
+    .mapbox .pnum {
+        padding-top: 5px;
+        padding-bottom: 5px;
     }
 
-    .gotop {
-        width: 0;
-    }
-
-    .bx-wrapper img {
-        height:400px;
-      }
 }
 
 
 
 
-
-
 @media screen and (max-width:768px) {
-    .cont1 .slider .slick-prev { 
-        font-size: 25px;
+    #wrap {
+        display: block;
     }
-    .cont1 .slider .slick-next { 
-        font-size: 25px;
-    }
-    .cont1 .slider .slider_text h2 {
-        font-size: 30px;
-        padding: 0px 0px 5px;
-    }
-    .cont1 .slider .slider_text p {
-        font-size: 13px;
-        padding-top: 0px;
-    }
-
-
-
-    .cont .cont_box {
-        width: 49%;
-        float: left;
-        margin-right: 2%;
-        transition: all 0.2s;
-    }
-
-    .cont .cont_box:nth-child(2) {
-        margin-right: 0px;
-    }
-    .topbx h2 {
-        font-size: 26px;
-    }
-    .topbx p {
-        font-size: 14px;
-        padding: 10px 0 30px 0;
-        margin-bottom: 0px;
-    }
-
-    .cont .cont_box h2{
-        font-size: 25px;
-        color: #333;
-        padding: 50px 0 0 0;
-    
-    }
-
-    .cont .cont_box h3 {
-        font-size: 16px;
-        font-weight: bold;
-        color: #333;
-        margin: 1px 0 0 0;
-        transition: all 0.3s;
-    }
-    .cont .cont_box p {
-        font-size: 11px;
-        font-weight: normal;
-        color: #777;
-        margin: 10px 0 20px 0;
-    }
-
-    .cont4_back {
-        width: 98%;
+    #map {
+        height: 300px;
+        margin-top: 10px;
         margin: 0 auto;
+        width: 100%;
+    }
+    .result {
+        height:130px;
+    }
+    .result h2 {
+        font-size: 15px;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 10px;
         transition: all 0.3s;
     }
-    .cont6 a {
-        width: 49%;
-        margin-right: 0.5%;
+    .result p {
+        font-size: 12px;
+        color: gray;
+        text-align: center;
+        cursor: pointer;
+        padding-top: 5px;
+        transition: all 0.3s;
     }
-    .cont6 a:first-child {
-        margin-right: 0px;
+    .result p:last-child {
+        padding-bottom: 15px;
     }
-    .cont6 a:nth-child(3) {
-        margin-top: 5px;
-        margin-right: 0px;
+    .mapbox {
+        width:200px;
+        text-align:center;
+        padding:5px 5px;
+        border-radius: 10px;
     }
-
-    .bx-wrapper img {
-        height:300px;
-      }
-
+    .mapbox p {
+        font-size: 12px;
+        color: gray;
+    }
+    .mapbox h3 {
+        font-size: 15px;
+        font-weight: bold;
+        color: cornflowerblue;
+        padding-top: 5px;
+    }
+    .mapbox .adr {
+        padding-top: 15px;
+    }
+    .mapbox .pnum {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
 }
